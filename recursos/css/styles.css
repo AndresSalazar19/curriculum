@@ -338,3 +338,81 @@ form button:hover {
     transform: translateY(-3px) scale(1.05);
 }
 
+.tabla-experiencia,
+.tabla-idiomas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.tabla-experiencia th,
+.tabla-experiencia td,
+.tabla-idiomas th,
+.tabla-idiomas td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.tabla-experiencia th,
+.tabla-idiomas th {
+  background-color: var(--azul-medio);
+  color: var(--blanco);
+}
+
+.tabla-experiencia tr:nth-child(even),
+.tabla-idiomas tr:nth-child(even) {
+  background-color: var(--gris-claro);
+}
+
+@media (max-width: 768px) {
+  .tabla-experiencia,
+  .tabla-idiomas {
+    font-size: 0.85rem;
+  }
+}
+
+/* ==== Dinamismo tabla experiencia e idiomas ==== */
+.tabla-experiencia tr:hover,
+.tabla-idiomas tr:hover {
+  background-color: #e6f0fa;
+  transform: scale(1.005);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tabla-experiencia td,
+.tabla-idiomas td {
+  transition: all 0.2s ease-in-out;
+}
+
+a {
+  color: var(--azul-medio);
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--azul-oscuro);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--azul-medio);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
