@@ -311,3 +311,30 @@ form button:hover {
     border-left: 3px solid var(--azul-medio);
     padding-left: 1rem;
 }
+
+.contacto-enlaces {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.contacto-enlaces li a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contacto-enlaces li a:hover {
+    background-color: var(--azul-oscuro);
+    transform: translateY(-3px) scale(1.05);
+}
+
