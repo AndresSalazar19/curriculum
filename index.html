@@ -134,29 +134,41 @@
                     <li>🏫 Escuela Superior Politécnica del Litoral (ESPOL)</li>
                 </ul>
 
-                <form action="exito.html" method="get">
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                <form id="formulario-contacto" action="exito.html" method="get">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="motivo">Motivo de contacto:</label>
-                    <select id="motivo" name="motivo" required>
-                        <option value="" disabled selected>Seleccione una opción</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="colaboracion">Colaboración</option>
-                        <option value="otro">Otro</option>
-                    </select>
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="otro">Otro</option>
+                </select>
 
-                    <fieldset>
-                        <legend>¿Cómo prefieres ser contactado?</legend>
-                        <label><input type="radio" name="contacto" value="email" required> Email</label>
-                        <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
-                    </fieldset>
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <label><input type="radio" name="contacto" value="email" required> Email</label>
+                    <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
+                </fieldset>
 
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <div id="campo-email" style="display: none;">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ej: juanperez@gmail.com">
+                </div>
 
-                    <button type="submit">Enviar</button>
+                <div id="campo-telefono" style="display: none;">
+                    <label for="telefono">Número de teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9,15}" placeholder="Ej: 0981234567">
+                </div>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
                 </form>
+
+
 
                 <p>También puedes contactarme directamente:</p>
                 <ul>
@@ -190,5 +202,7 @@
     <footer>
         <p>&copy; 2025 Andres Salazar. Todos los derechos reservados.</p>
     </footer>
+    <script src="recursos/js/contacto.js"></script>
+
 </body>
 </html>

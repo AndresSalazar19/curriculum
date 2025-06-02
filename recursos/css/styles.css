@@ -82,20 +82,15 @@ th {
 }
 
 /* ===== Formulario ===== */
-form label {
-    font-weight: bold;
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+form label, form textarea, form input, form select, form button, form fieldset {
+    grid-column: 1 / -1;
 }
 
-form input[type="text"],
-form select,
-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.3rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
 input[type="radio"],
 input[type="checkbox"] {
