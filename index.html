@@ -24,25 +24,115 @@
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
-            <p>Descripción breve sobre ti.</p>
+            <img src="recursos/img/foto_perfil.jpeg" alt="Foto de Andres Salazar">
+            <p>Hola, soy Andres Salazar, un desarrollador apasionado por la tecnología, la programación y el aprendizaje constante. Me motiva resolver problemas y crear soluciones útiles.</p>
         </section>
+
         <section id="experiencia">
             <h2>Experiencia</h2>
-            <p>Detalles sobre tu experiencia laboral.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Periodo</th>
+                        <th>Cargo</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024 (Marzo - Actualidad)</td>
+                        <td>Desarrollador Web Fullstack</td>
+                        <td>Diseño y desarrollo de sitios web personalizados para pequeños negocios usando HTML, CSS, JavaScript y React.</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+
         <section id="educacion">
             <h2>Educación</h2>
-            <p>Información sobre tu formación académica.</p>
+            <ol>
+                <li>
+                    <strong>Ingeniería en Computacion</strong> – Escuela Superior Politécnica del Litoral  
+                    <br>Año de inicio: 2023 – En curso
+                </li>
+                <li>
+                    <strong>Bachiller Técnico en Informática</strong> – Colegio Técnico Nacional  
+                    <br>Graduación: 2022
+                </li>
+            </ol>
         </section>
+
         <section id="habilidades">
             <h2>Habilidades</h2>
-            <p>Lista de tus habilidades principales.</p>
+            <ul>
+                <li>Desarrollo Web (HTML, CSS, JavaScript)</li>
+                <li>React y Node.js</li>
+                <li>SQL y bases de datos relacionales</li>
+                <li>Control de versiones con Git</li>
+            </ul>
         </section>
+
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Información para que puedan contactarte.</p>
+            <p>Si deseas ponerte en contacto conmigo, por favor completa el siguiente formulario:</p>
+            
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <label>
+                        <input type="radio" name="contacto" value="email" required>
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contacto" value="telefono" required>
+                        Teléfono
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Área de intereses</legend>
+                    <input type="checkbox" name="tecnologia" id="tecnologia">
+                    <label for="tecnologia">Desarrollo</label>
+                    <input type="checkbox" name="educacion" id="educacion">
+                    <label for="educacion">Educación</label>
+                    <input type="checkbox" name="investigacion" id="investigacion">
+                    <label for="investigacion">Investigación</label>
+                    <input type="checkbox" name="otros" id="otros">
+                    <label for="otros">Otros</label>
+                </fieldset>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p>O puedes contactarme directamente a través de:</p>
+            <ul>
+                <li><a href="mailto:aasalazar@espol.edu.ec">Correo</a></li>
+                <li><a href="https://www.linkedin.com/in/aasalazarm/" target="_blank">LinkedIn</a></li>
+            </ul>
+
+    
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <p>Disponibles a solicitud.</p>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Andres Salazar. Todos los derechos reservados.</p>
     </footer>
