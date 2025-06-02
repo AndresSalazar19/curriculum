@@ -1,5 +1,6 @@
 /* styles.css */
 
+
 /* ===== Colores base ===== */
 :root {
     --azul-oscuro: #1A3B5D;
@@ -98,18 +99,13 @@ input[type="checkbox"] {
 }
 
 button {
-    background-color: var(--azul-medio);
-    color: var(--blanco);
-    border: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 button:hover {
     background-color: var(--azul-oscuro);
+    transform: scale(1.05);
 }
+
 
 /* ===== Mapa embebido ===== */
 iframe {
@@ -183,3 +179,4 @@ footer {
     object-fit: cover;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
+
