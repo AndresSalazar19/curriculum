@@ -1,0 +1,165 @@
+/* styles.css */
+
+/* ===== Colores base ===== */
+:root {
+    --azul-oscuro: #1A3B5D;
+    --azul-medio: #2C5B8B;
+    --blanco: #FFFFFF;
+    --gris-claro: #F2F2F2;
+    --texto-oscuro: #333333;
+}
+
+/* ===== Reset básico ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--gris-claro);
+    color: var(--texto-oscuro);
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Cabecera ===== */
+header {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== Cuerpo principal ===== */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    border-bottom: 2px solid var(--azul-medio);
+    padding-bottom: 0.5rem;
+    color: var(--azul-oscuro);
+}
+
+/* ===== Tabla de experiencia ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+}
+
+/* ===== Formulario ===== */
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--azul-oscuro);
+}
+
+/* ===== Mapa embebido ===== */
+iframe {
+    border-radius: 8px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* ===== Página de éxito ===== */
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.container h1 {
+    color: var(--azul-medio);
+}
+
+.container a {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--azul-medio);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container a:hover {
+    background-color: var(--azul-oscuro);
+}
