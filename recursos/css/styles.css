@@ -48,12 +48,9 @@ nav ul li a {
 
 /* ===== Cuerpo principal ===== */
 main {
-    max-width: 900px;
-    margin: 2rem auto;
+    max-width: 100%;
+    padding: 2rem 5%;
     background-color: var(--blanco);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 section {
@@ -162,4 +159,11 @@ footer {
 
 .container a:hover {
     background-color: var(--azul-oscuro);
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
